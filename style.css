@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* #2D25A0 */
+.header{
+background-color:#2D25A0;
+/* width: 1440px; */
+width:100%;
+height: 677px;
+
+}
+.menu-icon{
+    display: none;
+}
+nav{
+width: 1160px;
+height: 44px;
+margin-left: 156px;
+ margin-right: 124px; 
+ 
+display: flex;
+justify-content: space-between;
+}
+nav span {
+    margin-top:42px;
+}
+
+ nav span a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 36px;
+   
+}
+.logout{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    border-radius:1px;
+  
+}
+.logOut-icon{
+     color: #FFFFFF;
+}
+
+.Text-info{
+        margin: 207px 0 240px 156px;
+        color: #FFFFFF;
+        width: 485px;
+        height: 230px;
+        font-size: 34px;
+                
+}
+.Match-info{
+    display: flex;
+
+}
+.Match-info img{
+     width: 556px;
+    height:438px;
+    margin: 153px 142px 86px 100px;
+   
+}
+.Watch-Live{
+    width:168px;
+    height:44px;
+}
+/* .thumbnail img{
+   
+} */
+.card{
+    width:1200px;
+    margin: 40px 30px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.card-details{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 27px;
+    
+}
+.player{
+    width:360px;
+    height:474px;
+    box-shadow:2px 2px 40px rgba(0, 0, 0, 0.15);
+    padding:15px;
+    background-color: #FFFFFF;
+}
+.player img{
+    width:300px;
+    height:256px;
+}
+
+.player-info-text{
+    font-weight: 400;
+    color: #6C6C6C;
+}
+.All-highlight{
+    margin-top:224px;
+    margin-left: 185px;
+    margin-right:65px;
+   
+}
+.hightlight-info{
+      width: 466px;
+    height: 309px;
+   
+}
+.All-highlight {
+    display: flex;
+}
+.best-clips img{
+    width: 567px;
+    height: 427px;
+    margin-left: 66px;
+    margin-right: 156px;;
+}
+
+.footer-section{
+    width: 485px;
+    height: 215px;
+    margin-left: 550px;
+    margin-top: 155px;
+}
+.logo img{
+    width: 485px;
+    height: 110px;
+}
+.socia-media-icon{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size:20px;
+}
+.copyright-right{
+    text-align: center;
+}
+
+
+
+/* media queris */
+
+/* Mobile Devices */
+
+
+@media only screen and (max-width: 680px){
+    .header{
+        width: 100%;
+        height:100%;
+    }
+    .nav{
+        width: 100%;
+    }
+    nav a{
+        margin-left: 56px;
+        margin-right: 24px; 
+        display: none;
+        font-size: 10px;
+    }
+    .logout{
+        margin-right: 100%;
+    }
+
+    .menu-icon{
+        display: block;
+        color:wheat;
+    }
+    .Match-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .Match-info img{
+        width:330px;
+        height:260px;
+        margin-right:600px;
+    }
+    .card{
+        margin-top: 47px;
+        width: 100%;
+        
+    }
+    .card-details{
+        display: grid;
+        grid-column-gap: 24px;
+        grid-template-columns: repeat(1,1fr);
+       margin-left: 20px;
+       
+    }
+    .All-highlight{
+        margin: 86px 10px 16px 15px;
+        display:grid;
+        grid-template-columns: repeat(1.1fr);
+        
+    }
+    .hightlight-info{
+        width:100%;
+    }
+    .best-clips img{
+        width: 328px;
+       height: 248px;
+       margin:20px 0 0 10px;
+    }
+   .footer-section{
+       width: 100%;
+       margin-top:20px;
+   }
+   .logo img{
+       width: 70%;
+       height:80px;
+   }
+   .socia-media-icon{
+       font-size:10px;
+   }
+}
