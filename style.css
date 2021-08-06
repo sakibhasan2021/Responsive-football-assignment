@@ -3,23 +3,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* #2D25A0 */
+/* design for header class */
 .header{
 background-color:#2D25A0;
-/* width: 1440px; */
 width:100%;
 height: 677px;
 
 }
+/* 
+  menu -icon
+*/
 .menu-icon{
     display: none;
 }
+/* nav bar */
 nav{
 width: 1160px;
 height: 44px;
 margin-left: 156px;
- margin-right: 124px; 
- 
+margin-right: 124px; 
 display: flex;
 justify-content: space-between;
 }
@@ -33,16 +35,48 @@ nav span {
     margin-right: 36px;
    
 }
+/* Log out button */
 .logout{
     background-color: #E02C6D;
     padding: 10px 24px;
     color: #FFFFFF;
     border-radius:1px;
+    cursor: pointer;
+    transition: width  5s ease 0.5s;
+   
   
+}
+.logout:hover{
+   width: 200px;
 }
 .logOut-icon{
      color: #FFFFFF;
 }
+/* using Animation */
+.using-animation{
+    animation-name:image-resize;
+    animation-duration:10s;
+}
+@keyframes image-resize{
+    0%{
+        width:250px;
+        padding: 20px;
+    }
+    25%{
+         width:200px;
+          padding: 20px;
+    }
+    50%{
+        width:250pxpx;
+       padding:15px;
+    }
+    100%{
+         width:123px;
+         
+    }
+}
+  
+/* text info for thumbnail  section*/
 
 .Text-info{
         margin: 207px 0 240px 156px;
@@ -52,44 +86,57 @@ nav span {
         font-size: 34px;
                 
 }
+/* match info for thumbnail section */
 .Match-info{
     display: flex;
 
 }
+/* transform */
 .Match-info img{
+    cursor: pointer;
      width: 556px;
     height:438px;
     margin: 153px 142px 86px 100px;
+    transition: transform 10s linear 1s;
    
 }
+.Match-info img:hover{
+    transform: rotate(45deg);
+}
+
+/* Button Watch live */
+
 .Watch-Live{
     width:168px;
     height:44px;
 }
-/* .thumbnail img{
-   
-} */
+
+/* Player Card */
 .card{
-    width:1200px;
-    margin: 40px 30px;
+    width:1300px;
+    margin: 40px 40px;
     display: flex;
     justify-content: center;
     
    
 }
+/* Card style  */
 .card-details{
     display: grid;
     grid-template-columns:repeat(3,1fr);
     grid-column-gap: 35px;
     grid-row-gap: 27px;
+    margin-bottom: 40px;
     
 }
+/* indivitual player */
 .player{
     width:360px;
     height:474px;
     box-shadow:2px 2px 40px rgba(0, 0, 0, 0.15);
     padding:15px;
     background-color: #FFFFFF;
+    
 }
 .player img{
     width:300px;
@@ -100,10 +147,17 @@ nav span {
     font-weight: 400;
     color: #6C6C6C;
 }
+/* 
+
+
+   highlight section
+*/
 .All-highlight{
     margin-top:224px;
     margin-left: 185px;
     margin-right:65px;
+    background-color: lightgray;
+    padding:15px;
    
 }
 .hightlight-info{
@@ -121,6 +175,9 @@ nav span {
     margin-right: 156px;;
 }
 
+
+
+ /* Footer section */
 .footer-section{
     width: 485px;
     height: 215px;
@@ -148,48 +205,54 @@ nav span {
 /* Mobile Devices */
 
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 688px){
     .header{
         width: 100%;
         height:100%;
     }
-    .nav{
+    nav{
         width: 100%;
     }
     nav a{
-        margin-left: 56px;
-        margin-right: 24px; 
         display: none;
-        font-size: 10px;
     }
     .logout{
-        margin-right: 100%;
+       
+       margin-right: 200px;
+       margin-top:10px;
+       
     }
-
-    .menu-icon{
-        display: block;
-        color:wheat;
+    .Text-info{
+        font-size:12px;
+        margin-left: 90px ;
     }
     .Match-info{
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
     }
     .Match-info img{
-        width:330px;
-        height:260px;
-        margin-right:600px;
+        margin:20px 30px 40px 40px;
     }
-    .card{
+    .menu-icon{
+        display: block;
+        color:wheat;
+        margin-right: 0;
+    }
+     .card{
         margin-top: 47px;
         width: 100%;
         
     }
     .card-details{
         display: grid;
-        grid-column-gap: 24px;
         grid-template-columns: repeat(1,1fr);
-       margin-left: 20px;
-       
+          grid-column-gap: 24px;
+           margin-left: 20px;
+    }
+    .Match-info img{
+        width:330px;
+        height:260px;
+        margin-right:600px;
     }
     .All-highlight{
         margin: 86px 10px 16px 15px;
@@ -200,15 +263,17 @@ nav span {
     .hightlight-info{
         width:100%;
     }
-    .best-clips img{
+     .best-clips img{
         width: 328px;
        height: 248px;
        margin:20px 0 0 10px;
     }
-   .footer-section{
+    .footer-section{
        width: 100%;
        margin-top:20px;
+       margin: 0;
    }
+    
    .logo img{
        width: 70%;
        height:80px;
@@ -216,4 +281,7 @@ nav span {
    .socia-media-icon{
        font-size:10px;
    }
+   
+
 }
+  
